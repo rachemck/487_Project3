@@ -8,6 +8,8 @@ $(document).ready(function(){
   var rates =[];
   var active =[];
   var contraception = [];
+  var year = [];
+
 
   $('#ajax-table').DataTable({ //you have to wrap the whole JSON in {} and add "data:" then save as txt file
     "ajax": "js/states.txt",
@@ -18,9 +20,7 @@ $(document).ready(function(){
     ],
     "columnDefs":[{
       "targets":[0, 2],
-      "createdCell":function(td, cellData, rowData, row, col){
 
-      }
     }]
   });
 
@@ -29,6 +29,7 @@ $(document).ready(function(){
       dataType: 'json',
       url: url,
       data: births,
+      async: true,
       success:function(births){
         console.log(births);
         for(i = 0; i < births.length; i++){
@@ -115,6 +116,7 @@ $.ajax({
     for(i = 0; i < factorsChart.length; i++){
       active.push(factorsChart[i].Active);
       contraception.push(factorsChart[i].Contraception);
+      year.push(factorsChart[i].Year);
       console.log(active);
     }
 
@@ -145,6 +147,8 @@ title: {
     text: 'Percent'
 },
 
+
+
 labels: {
         formatter: function() {
             return this.value + ' %';
@@ -158,13 +162,20 @@ verticalAlign: 'middle'
 },
 
 plotOptions: {
-series: {
+  series: {
     label: {
         connectorAllowed: false
     },
-    pointStart: 1991
-}
+
+  }
 },
+
+xAxis: {
+        categories: ['1991', '1993', '1995', '1997', '1999', '2001', '2003', '2005', '2007', '2009', '2011', '2013','2015', '2017',],
+        labels:{
+          step: 2
+        }
+    },
 
 series: [{
 name: 'Percent of sexually active teens',
