@@ -1,0 +1,72 @@
+[
+  {
+    "Year": 1991,
+    "Contraception": 16.5,
+    "Active": 54.1
+  },
+  {
+    "Year": 1993,
+    "Contraception": 15.3,
+    "Active": 53
+  },
+  {
+    "Year": 1995,
+    "Contraception": 15.8,
+    "Active": 53.1
+  },
+  {
+    "Year": 1997,
+    "Contraception": 15.2,
+    "Active": 48.4
+  },
+  {
+    "Year": 1999,
+    "Contraception": 14.9,
+    "Active": 49.9
+  },
+  {
+    "Year": 2001,
+    "Contraception": 13.3,
+    "Active": 45.6
+  },
+  {
+    "Year": 2003,
+    "Contraception": 11.3,
+    "Active": 46.7
+  },
+  {
+    "Year": 2005,
+    "Contraception": 12.7,
+    "Active": 46.8
+  },
+  {
+    "Year": 2007,
+    "Contraception": 12.2,
+    "Active": 47.8
+  },
+  {
+    "Year": 2009,
+    "Contraception": 11.9,
+    "Active": 46
+  },
+  {
+    "Year": 2011,
+    "Contraception": 12.9,
+    "Active": 47.4
+  },
+  {
+    "Year": 2013,
+    "Contraception": 13.7,
+    "Active": 46.8
+  },
+  {
+    "Year": 2015,
+    "Contraception": 13.8,
+    "Active": 41.2
+  },
+  {
+    "Year": 2017,
+    "Contraception": 13.8,
+    "Active": 39.5
+  }
+]
