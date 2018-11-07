@@ -1,38 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Airport Data</title>
+  <title>Teen Birthrate Hits Record Lows</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
 </head>
-<body>
-  <h1>National Teen Birthrate</h1>
-  <table id="ajax-table">
-  <!---content will go here--->
 
-  <thead>
-    <tbody>
-      <tr>
-          <th>States</th>
-          <th>1991</th>
-          <th>2015</th>
-      </tr>
-    </tbody>
-  </thead>
-  </table>
+<body class= "grid">
+  <div class="nav flex">
+    <div class="left flex">
+      <div class="menu-icon flex"><i class="fas fa-search"></i></div>
+      <div class="menu-icon flex">Sections <i class="fas fa-bars"></i></div>
+    </div>
+    <div class="logo flex">
+      <img width="181" class="main-logo" src="https://www.washingtonpost.com/pb/resources/img/thewashingtonpost-white-2x.png" alt="The Washington Post">
+      <p id="dies"><em>Democracy Dies in Darkness</em></p>
+    </div>
+    <div class="menu-icon right flex">Sign In<i class="fas fa-user"></i></div>
+  </div>
+  <div class="body-content">
+  <h1>Teen Birthrate Hits Record Lows</h1>
+
+  <div class="sticky-menu flex">
+    <i class="fas fa-home side"></i>
+    <i class="fab fa-facebook-square side"></i>
+    <i class="fab fa-twitter side"></i>
+    <i class="fab fa-google-plus-g side"></i>
+    <i class="fas fa-envelope side"></i>
+    <i class="fab fa-linkedin-in side"></i>
+    <i class="fab fa-pinterest side"></i>
+    <i class="fab fa-tumblr side"></i>
+    <div class="gray flex">
+      <i class="fas fa-font side"></i>
+      <i class="fas fa-print side"></i>
+      <i class="fas fa-comments side"></i>
+    </div>
+  </div>
 
   <div id="national-rate">
   <!---content will go here--->
   </div>
 
+  <p>The national teen birthrate has reach a historic low, according to data from the National Center for Health Statistics. After a slight increase in the birthrate for teens aged 15-19 in 2006 and 2007, the rate has been on a steady decline, reaching a low of 22.3 births per 1,000 in 2015. Nearly 77 percent of all teen pregnancies are unplanned, according to a national survey from the Department of Health and Human Services. </p>
+
   <div id="factors">
   <!---content will go here--->
   </div>
 
+  <p>The decline in the teen birthrate is likely due to a combination of a decrease in the amount of teens having sex and an decrease of teens not using contraception. The amount of sexually active teens has dropped from 54.1 percent in 1991 to 39.5 percent in 2015 and those choosing not to use contraceptives has decreased slighty from 16.5 percent in 1991 to 13.8 percent in 2015, according to data from the U.S. Youth Risk Behavior Surveillance System. The YRBSS national survey contains data represetnative of 9th through 12th grade students in both public and private schools across the country. This trend of teens choosing to use contraceptives or to not have sex at all are both feasible factors leading to the birth rate decrease.
+
+  <h2>How Does Your State Compare?</h2>
+  <h3>Age 15-19 Birthrate Data per 1,000 from 1991 and 2015</h3>
+  <table id="ajax-table" class="display" style="width:100%">
+  <!---content will go here--->
+    <thead>
+
+        <tr>
+            <th>States</th>
+            <th>1991</th>
+            <th>2015</th>
+        </tr>
+
+    </thead>
+    </table>
+    <p>Rachel McKinney</p>
+    <p>Put Bio here</p>
+
+  <div id="subscribe">
+    The story must be told.
+    Your subscription supports journalism that matters
+    Try 1 month for $1
+  </div>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 
 

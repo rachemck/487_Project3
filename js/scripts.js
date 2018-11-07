@@ -55,7 +55,7 @@ title: {
 },
 
 subtitle: {
-    text: 'Source: NCHS Birth Rates for Females by Age Group'
+    text: 'Source: National Center for Health Statistics: Birth Rates for Females by Age Group'
 },
 
 yAxis: {
@@ -166,15 +166,13 @@ plotOptions: {
     label: {
         connectorAllowed: false
     },
-
+    
   }
 },
 
 xAxis: {
         categories: ['1991', '1993', '1995', '1997', '1999', '2001', '2003', '2005', '2007', '2009', '2011', '2013','2015', '2017',],
-        labels:{
-          step: 2
-        }
+
     },
 
 series: [{
