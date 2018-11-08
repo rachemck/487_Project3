@@ -51,7 +51,7 @@ function buildChart(){
 var myChart = Highcharts.chart('national-rate', {
 
 title: {
-    text: 'Birth Rates for U.S. Teens Aged 15-19 from 1991-2015'
+    text: 'Birth Rates per 1,000 for U.S. Teens Aged 15-19 from 1991-2015'
 },
 
 subtitle: {
@@ -138,7 +138,7 @@ var myChart2 = Highcharts.chart('factors', {
         type: 'area'
     },
     title: {
-    text: 'Sexual Behaviors among U.S. Teens Aged 15-19 from 1991-2015'
+    text: 'Sexual Behaviors among U.S. High School Students from 1991-2017'
     },
 
     subtitle: {
