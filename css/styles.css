@@ -1,12 +1,22 @@
 .grid {
   display: grid;
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 10% 34% 34% 20% 7%;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
-  'hd hd hd hd'
-  'side bd bd .'
-  '. ft ft .';
+  'hd hd hd hd hd'
+  'side tlt tlt tlt .'
+  'side bd bd ad .'
+  '. ft ft . .';
   margin: 0 auto;
+}
+
+a{
+  color: #1955a5;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 body{
@@ -21,6 +31,26 @@ h1 {
   font-family: 'Prata', serif;
   font-size: calc(20px + 2.5vw);
   margin-bottom: 8px;
+}
+
+.copy {
+  line-height: 1.6;
+}
+.highcharts-title{
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.highcharts-subtitle{
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+tspan {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#health-pad {
+  padding-bottom: 5px;
+  font-family: Georgia;
 }
 
 .sticky-menu{
@@ -51,6 +81,9 @@ h1 {
 
 .body-content{
   grid-area: bd;
+  border-right: solid 1px #d5d5d5;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #dies {
@@ -93,6 +126,21 @@ h1 {
 .left, .right{
   flex-basis: 10%;
 
+}
+
+.byline p{
+  font-family: 'Libre Franklin', sans-serif;
+  margin-top: -11px;
+
+
+}
+
+.border-bottom{
+  border-bottom: solid 1px #d5d5d5;
+  grid-area: tlt;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 .logo{
