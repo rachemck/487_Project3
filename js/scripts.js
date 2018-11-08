@@ -131,75 +131,63 @@ error:function(msg){
 
 });//close Ajax
 
+
 function buildChart2(){
 var myChart2 = Highcharts.chart('factors', {
-
-title: {
-text: 'Risky Sexual Behaviors among U.S. Teens Aged 15-19 from 1991-2015'
-},
-
-subtitle: {
-text: 'Source: U.S Youth Risk Behavior Surveillance System (YRBSS)'
-},
-
-yAxis: {
-title: {
-    text: 'Percent'
-},
-
-
-
-labels: {
-        formatter: function() {
-            return this.value + ' %';
-        }
-    }
-},
-legend: {
-layout: 'vertical',
-align: 'right',
-verticalAlign: 'middle'
-},
-
-plotOptions: {
-  series: {
-    label: {
-        connectorAllowed: false
+    chart: {
+        type: 'area'
     },
-    
-  }
-},
+    title: {
+    text: 'Sexual Behaviors among U.S. Teens Aged 15-19 from 1991-2015'
+    },
 
-xAxis: {
+    subtitle: {
+    text: 'Source: U.S Youth Risk Behavior Surveillance System (YRBSS)'
+    },
+    xAxis: {
         categories: ['1991', '1993', '1995', '1997', '1999', '2001', '2003', '2005', '2007', '2009', '2011', '2013','2015', '2017',],
-
-    },
-
-series: [{
-name: 'Percent of sexually active teens',
-data: active
-},
-{
-  name: 'Did not use any form of contraception'+'<br>'+'during last sexual intercourse',
-  data: contraception
-}],
-
-responsive: {
-rules: [{
-    condition: {
-        maxWidth: 500
-    },
-    chartOptions: {
-        legend: {
-            layout: 'horizontal',
-            align: 'center',
-            verticalAlign: 'bottom'
+        tickmarkPlacement: 'on',
+        title: {
+            enabled: false
         }
-    }
-}]
-}
+    },
+    yAxis: {
+    title: {
+        text: 'Percent'
+    },
 
-}); //var myChart
-} //function buildChart
+
+
+    labels: {
+            formatter: function() {
+                return this.value + ' %';
+            }
+        }
+    },
+    tooltip: {
+        split: true,
+        valueSuffix: '%'
+    },
+    plotOptions: {
+        area: {
+            stacking: 'normal',
+            lineColor: '#666666',
+            lineWidth: 1,
+            marker: {
+                lineWidth: 1,
+                lineColor: '#666666'
+            }
+        }
+    },
+    series: [{
+    name: 'Percent of sexually active teens',
+    data: active
+    },
+    {
+      name: 'Did not use any form of contraception'+'<br>'+'during last sexual intercourse',
+      data: contraception
+    }],
+});
+}
 
 });//document
